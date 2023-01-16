@@ -4,6 +4,7 @@
     font-size: 18px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .settings__setting i {
@@ -13,4 +14,9 @@
 }
 .fa-info {
     margin: 0 11px;
+}
+
+.settings__setting-column:last-child {
+    opacity: 0.8;
+    margin-right: 20px;
 }

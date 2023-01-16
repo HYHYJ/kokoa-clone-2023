@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chats - Kokoa Clone</title>
+    <title>Chat w/ Nick - Kokoa Clone</title>
   </head>
-  <body>
+  <body id="chat-screen">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>Zootopia</span>
@@ -25,87 +25,76 @@
       </div>
     </div>
 
-    <header class="screen-header">
-      <h1 class="screen-header__title">Chats</h1>
-      <div class="screen-header__icons">
-        <span><i class="fas fa-search fa-lg"></i></span>
-        <span> <i class="fas fa-carrot fa-lg"></i></span>
-        <span><i class="fas fa-music fa-lg"></i></span>
-        <span><a href="setting.html"></a><i class="fas fa-cog fa-lg"></i></span>
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html">
+          <i class="fas fa-chevron-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Nick wilde</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-2x"></i></span>
+        <span><i class="fas fa-bars fa-2x"></i></span>
       </div>
     </header>
 
-    <main class="main-screen">
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Monday, January 23, 2023</div>
 
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="https://pbs.twimg.com/profile_images/867490280349589505/vNQ4lkU1_400x400.jpg"
-            class="user-component__avatar user-component__avatar--sm"
-          />
-          <div class="user-component__text">
-            <h4 class="user-componet__title">Nick Wilde</h4>
-            <h6 class="user-component__subtitle">
-              Good morning! carrot <i class="far fa-heart"></i>
-            </h6>
-          </div>
-        </div>
-
-          <div class="user-component__column">
-            <span class="user-componet__time">07:03</span>
-            <div class="badge">2</div>
+      <div class="message-row">
+        <img
+          src="https://pbs.twimg.com/profile_images/867490280349589505/vNQ4lkU1_400x400.jpg"
+        />
+        <div class="message-row__content">
+          <span class="message__author">Nick Wilde</span>
+          <div class="message__info">
+            <span class="message__buble"
+              >Good morning! carrot <i class="far fa-heart"></i
+            ></span>
+            <!--span class="message__time">07:03</span>-->
           </div>
         </div>
       </div>
-    </div>
 
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="https://i.pinimg.com/originals/75/dc/10/75dc105345e43451e1da941feec10484.jpg"
-            class="user-component__avatar user-component__avatar--sm"
-          />
-          <div class="user-component__text">
-            <h4 class="user-componet__title">My loves</h4>
-            <h6 class="user-component__subtitle">
-              We wish you all the luck in the world!
-            </h6>
-          </div>
-        </div>
-          <div class="user-component__column">
-            <span class="user-componet__time">06:36</span>
-            <div class="badge">1</div>
+      <div class="message-row">
+        <div class="message-row__imgbox"></div>
+        <div class="message-row__content">
+          <!--span class="message__author">Nick Wilde</span>-->
+          <div class="message__info">
+            <span class="message__buble"
+              >It's a beautiful Day! <i class="fas fa-carrot"></i
+            ></span>
+            <span class="message__time">07:20</span>
           </div>
         </div>
       </div>
+
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__buble">
+              Good morning! Nick <i class="far fa-heart"></i>
+            </span>
+            <span class="message__time">07:20</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="reply">
+        <div class="reply__column">
+          <i class="far fa-plus-square fa-lg"></i>
+        </div>
+        <div class="reply__column">
+          <input type="text" placeholder="Write a message..." />
+          <i class="far fa-kiss-wink-heart fa-lg"></i>
+          <button>
+            <i class="fas fa-arrow-up"></i>
+          </button>
+        </div>
+      </form>
     </main>
-
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__btn">
-          <a class="nav__link" href="freinds.html"
-            ><i class="far fa-user fa-2x"></i
-          ></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="chats.html">
-            <span class="nav__notification badge">3</span
-            ><i class="fas fa-comment fa-2x"></i
-          ></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="find.html"
-            ><i class="fas fa-search fa-2x"></i
-          ></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="more.html"
-            ><span class="nav__notification small-notification"></span
-            ><i class="fas fa-ellipsis-h fa-2x"></i
-          ></a>
-        </li>
-      </ul>
-    </nav>
 
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"

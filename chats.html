@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends - Kokoa Clone</title>
+    <title>Chats - Kokoa Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -26,61 +26,17 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">Chats</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
+        <span> <i class="fas fa-carrot fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
-        <span><i class="fas fa-cog fa-lg"></i></span>
+        <span><a href="setting.html"></a><i class="fas fa-cog fa-lg"></i></span>
       </div>
     </header>
 
-    <a id="freinds-display-link"
-      ><i class="fas fa-info-circle"></i> Friends 'Names Display'<i
-        class="fas fa-angle-right"
-      ></i>
-    </a>
-
     <main class="main-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="https://extmovie.com/files/attach/images/135/068/454/012/4c323399f3a48657615568ea7aac5f48.jpg"
-            class="user-component__avatar user-component__avatar--sm"
-          />
-          <div class="user-component__text">
-            <h4 class="user-componet__title">Judy Hopps</h4>
-            <!--h6 class="user-component__subtitle">Tomorrow is Another Day!</h6> -->
-          </div>
-          <div class="user-component__column"></div>
-        </div>
-      </div>
-
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-hearder">
-          <span>Channel</span>
-          <i class="fas fa-angle-up"></i>
-        </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="http://pm1.narvii.com/7370/850baa05769b9bc2dc20d94d066b908cd6370eacr1-1600-1600v2_00.jpg"
-              class="user-component__avatar user-component__avatar--sm"
-            />
-
-            <div class="user-component__text">
-              <h4 class="user-componet__title user-component__title--not-bold">
-                ZPD <i class="fas fa-shield-alt fa-sm"></i>
-              </h4>
-            </div>
-          </div>
-
-          <div class="user-component__column">
-            <span>2</span>
-            <i class="fas fa-angle-right"></i>
-          </div>
-        </div>
-      </div>
-
+<a href="chat.html">
       <div class="user-component">
         <div class="user-component__column">
           <img
@@ -89,9 +45,37 @@
           />
           <div class="user-component__text">
             <h4 class="user-componet__title">Nick Wilde</h4>
-            <!--h6 class="user-component__subtitle">Tomorrow is Another Day!</h6> -->
+            <h6 class="user-component__subtitle">
+              Good morning! carrot <i class="far fa-heart"></i>
+            </h6>
           </div>
-          <div class="user-component__column"></div>
+        </div>
+
+          <div class="user-component__column">
+            <span class="user-componet__time">07:03</span>
+            <div class="badge">2</div>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </a>
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="https://i.pinimg.com/originals/75/dc/10/75dc105345e43451e1da941feec10484.jpg"
+            class="user-component__avatar user-component__avatar--sm"
+          />
+          <div class="user-component__text">
+            <h4 class="user-componet__title">My loves</h4>
+            <h6 class="user-component__subtitle">
+              We wish you all the luck in the world!
+            </h6>
+          </div>
+        </div>
+          <div class="user-component__column">
+            <span class="user-componet__time">06:36</span>
+            <div class="badge">1</div>
+          </div>
         </div>
       </div>
     </main>
@@ -99,14 +83,14 @@
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
-          <a class="nav__link" href="freinds.html"
-            ><i class="fas fa-user fa-2x"></i
-          ></a>
+          <a class="nav__link" href="friends.html">
+            <i class="far fa-user fa-2x"></i
+          > </a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
-            <span class="nav__notification">3</span
-            ><i class="far fa-comment fa-2x"></i
+            <span class="nav__notification badge">3</span
+            ><i class="fas fa-comment fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">
